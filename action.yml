@@ -1,0 +1,22 @@
+name: 'setup-env'
+description: 'Setup environment variables from .env file'
+author: 'Svetlin Ralchev'
+inputs:
+  path:
+    description: 'Path to the .env file (including file name)'
+    default: '.env'
+    required: true
+  mask:
+    description: 'Mark the variable as secret to prevent any appereance in the console'
+    required: false
+    default: 'false'
+  export:
+    description: 'Export the variable to GitHub environment variables'
+    required: false
+    default: 'true'
+outputs:
+  variables:
+    description: 'Exported environment variables'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
