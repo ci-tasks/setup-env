@@ -1,29 +1,28 @@
 {
   "name": "setup-env",
-  "version": "0.0.0",
-  "private": true,
   "description": "Setup environment variables from a file",
-  "main": "lib/main.js",
+  "author": "Svetlin Ralchev",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --write '**/*.ts'",
-    "format-check": "prettier --check '**/*.ts'",
-    "lint": "eslint src/**/*.ts",
-    "package": "ncc build --source-map --license licenses.txt",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+    "lint": "eslint src/**/*.ts",
+    "build": "ncc build src/main.ts --source-map --license LICENSE && action-docs --update-readme"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/ci-tasks/setup-env.git"
   },
   "keywords": [
-    "actions",
-    "node",
-    "setup"
+    "github-actions"
   ],
-  "author": "",
-  "license": "MIT",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@8.6.11",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "dotenv": "^16.1.4",
@@ -33,6 +32,7 @@
     "@types/node": "^20.3.2",
     "@typescript-eslint/parser": "^5.60.1",
     "@vercel/ncc": "^0.36.1",
+    "action-docs": "^1.2.0",
     "eslint": "^8.43.0",
     "eslint-plugin-github": "^4.7.0",
     "eslint-plugin-jest": "^27.2.2",

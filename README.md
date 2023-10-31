@@ -1,34 +1,31 @@
 # setup-env
 
-[![Continuous Integration](https://github.com/ci-tasks/setup-env/actions/workflows/test.yml/badge.svg)](https://github.com/ci-tasks/setup-env/actions/workflows/test.yml)
+<!-- action-docs-description -->
+## Description
 
-Export environment variables from a file.
+Setup environment variables from .env file
+<!-- action-docs-description -->
 
-## Usage
+<!-- action-docs-inputs -->
+## Inputs
 
-You can now consume the action by referencing the v1 branch
+| parameter | description | required | default |
+| --- | --- | --- | --- |
+| path | Path to the .env file (including file name) | `true` | .env |
+| mask | Mark the variable as secret to prevent any appereance in the console | `false` | false |
+| export | Export the variable to GitHub environment variables | `false` | true |
+<!-- action-docs-inputs -->
 
-If you have a file `.env` in your project directory.
+<!-- action-docs-outputs -->
+## Outputs
 
-```
-export APP_NAME="example-api"
-export APP_VERSION="1.0.1"
-```
+| parameter | description |
+| --- | --- |
+| variables | Exported environment variables |
+<!-- action-docs-outputs -->
 
-You can configure the action:
+<!-- action-docs-runs -->
+## Runs
 
-```yaml
-id: dotenv
-uses: ci-tasks/setup-env@main
-with:
-  mask: true
-  export: true
-  path: '.env'
-```
-
-Then you will have the following output variables:
-
-```
-${{ dotenv.outputs.variables.app_name }}
-${{ dotenv.outputs.variables.app_version }}
-```
+This action is a `node16` action.
+<!-- action-docs-runs -->
