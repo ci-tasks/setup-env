@@ -27,5 +27,5 @@ Setup environment variables from .env file
 <!-- action-docs-runs -->
 ## Runs
 
-This action is a `node16` action.
+This action is a `node20` action.
 <!-- action-docs-runs -->
