@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.10.1
     version: 1.10.1
   dotenv:
-    specifier: ^16.4.3
-    version: 16.4.3
+    specifier: ^16.4.4
+    version: 16.4.4
   dotenv-expand:
     specifier: ^11.0.3
     version: 11.0.3
@@ -1740,11 +1740,11 @@ packages:
     resolution: {integrity: sha512-qkK+MLTvZ86oq4sjMqGpUN/38SQ/J37mny88CsEUFFjb2MBVz06a809ri0QeVDXpxkvZkXzqjGUb0M1R6n3OGw==}
     engines: {node: '>=12'}
     dependencies:
-      dotenv: 16.4.3
+      dotenv: 16.4.4
     dev: false
 
-  /dotenv@16.4.3:
-    resolution: {integrity: sha512-II98GFrje5psQTSve0E7bnwMFybNLqT8Vu8JIFWRjsE3khyNUm/loZupuy5DVzG2IXf/ysxvrixYOQnM6mjD3A==}
+  /dotenv@16.4.4:
+    resolution: {integrity: sha512-XvPXc8XAQThSjAbY6cQ/9PcBXmFoWuw1sQ3b8HqUCR6ziGXjkTi//kB9SWa2UwqlgdAIuRqAa/9hVljzPehbYg==}
     engines: {node: '>=12'}
     dev: false
 
