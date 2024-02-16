@@ -29,7 +29,7 @@
     "dotenv-expand": "^11.0.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
+    "@types/node": "^20.11.19",
     "@typescript-eslint/parser": "^7.0.1",
     "@vercel/ncc": "^0.38.1",
     "action-docs": "^2.0.1",
