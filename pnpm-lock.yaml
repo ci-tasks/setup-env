@@ -12,8 +12,8 @@ dependencies:
     specifier: ^16.4.4
     version: 16.4.4
   dotenv-expand:
-    specifier: ^11.0.4
-    version: 11.0.4
+    specifier: ^11.0.6
+    version: 11.0.6
 
 devDependencies:
   '@types/node':
@@ -1736,8 +1736,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dotenv-expand@11.0.4:
-    resolution: {integrity: sha512-1a/jdB9ZFVtAxt8QvXkLmIAcQw1lqAg+KaRB0Eh2BaG0yHCSUUPttyuPFqH36WhZvEVpjghSfUaobNzisuH4Ng==}
+  /dotenv-expand@11.0.6:
+    resolution: {integrity: sha512-8NHi73otpWsZGBSZwwknTXS5pqMOrk9+Ssrna8xCaxkzEpU9OTf9R5ArQGVw03//Zmk9MOwLPng9WwndvpAJ5g==}
     engines: {node: '>=12'}
     dependencies:
       dotenv: 16.4.4
