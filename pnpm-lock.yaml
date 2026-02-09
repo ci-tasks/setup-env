@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^6.0.0
     version: 6.0.0(eslint@9.39.2)
   eslint-plugin-jest:
-    specifier: ^29.12.2
-    version: 29.12.2(eslint@9.39.2)(jest@30.2.0)(typescript@5.8.3)
+    specifier: ^29.13.0
+    version: 29.13.0(eslint@9.39.2)(jest@30.2.0)(typescript@5.8.3)
   jest:
     specifier: ^30.2.0
     version: 30.2.0(@types/node@25.2.1)
@@ -2299,12 +2299,12 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-jest@29.12.2(eslint@9.39.2)(jest@30.2.0)(typescript@5.8.3):
-    resolution: {integrity: sha512-IIRg0IZ5yuERfzOZrKuNScxk9yeuKo0M4Urx7RZcthK5HE/8gJUY518bdi7picLRBJVctjOW3yVx0zyBp4Cq+g==}
+  /eslint-plugin-jest@29.13.0(eslint@9.39.2)(jest@30.2.0)(typescript@5.8.3):
+    resolution: {integrity: sha512-VoONe0NsaQLb7ijvg4k35rzchqfyCaBsXammNMCkTyLvKLTpzQOVdXiPC54q7Vp/W7shMcqPBLwAc3yRSiGjSQ==}
     engines: {node: ^20.12.0 || ^22.0.0 || >=24.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^8.0.0
-      eslint: ^8.57.0 || ^9.0.0
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       jest: '*'
       typescript: '>=4.8.4 <6.0.0'
     peerDependenciesMeta:
