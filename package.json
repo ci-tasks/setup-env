@@ -24,7 +24,7 @@
   },
   "packageManager": "pnpm@8.6.11",
   "dependencies": {
-    "@actions/core": "^3.0.0",
+    "@actions/core": "^3.0.1",
     "dotenv": "^17.4.2",
     "dotenv-expand": "^13.0.0"
   },
